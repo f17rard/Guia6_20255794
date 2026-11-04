@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../css/stylesFunciones.css" rel="stylesheet" />
+    <link rel="icon" href="../img/js.png" sizes="32x32" type="image/png" />
+    <title>Ficha de estudiante</title>
+</head>
+
+<body>
+    <header>
+        <div class="px-3 py-2 text-bg-dark fixed-top">
+            <div class="container">
+                <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                    <a href="../indexFunciones.html"
+                        class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
+                        <img src="../img/js.png" alt="" width="32" height="32" class="me-2" />
+                    </a>
+
+                    <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small nav-bar">
+                        <li class="text-center">
+                            <a href="recursividad.html" class="nav-link text-white">
+                                <i class="bi bi-arrow-clockwise bi-2 d-block"></i>
+                                Recursividad
+                            </a>
+                        </li>
+                        <li class="text-center">
+                            <a href="tabla.html" class="nav-link text-white">
+                                <i class="bi bi-table bi-2 d-block"></i>
+                                Creando una Tabla
+                            </a>
+                        </li>
+                        <li class="text-center">
+                            <a href="formulario.html" class="nav-link text-white">
+                                <i class="bi bi-ui-checks bi-2 d-block"></i>
+                                Formulario
+                            </a>
+                        </li>
+                    <li class="nav-bar-li-active"><a class="nav-link text-white" href="fichaEstudiante.html" aria-current="page">Ficha de estudiante</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="container-lg py-4">
+        <section class="shadow-lg p-4 rounded">
+            <h1 class="h3">Ficha de estudiante</h1>
+            <form id="ficha" class="row g-3" novalidate>
+                <div class="col-md-6">
+                    <label class="form-label" for="carnet">Carnet</label>
+                    <input class="form-control" id="carnet" name="carnet" type="text" inputmode="text" placeholder="AB001" required>
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label" for="nombre">Nombre completo</label>
+                    <input class="form-control" id="nombre" name="nombre" type="text" inputmode="text" placeholder="Ana María López" required>
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label" for="dui">Número de DUI</label>
+                    <input class="form-control" id="dui" name="dui" type="text" inputmode="text" placeholder="00000000-0" required>
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label" for="nit">Número de NIT</label>
+                    <input class="form-control" id="nit" name="nit" type="text" inputmode="text" placeholder="0000-000000-000-0" required>
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label" for="nacimiento">Fecha de nacimiento</label>
+                    <input class="form-control" id="nacimiento" name="nacimiento" type="text" inputmode="text" placeholder="dd/mm/aaaa" required>
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label" for="correo">Correo electrónico</label>
+                    <input class="form-control" id="correo" name="correo" type="email" inputmode="email" placeholder="nombre@ejemplo.com" required>
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label" for="edad">Edad</label>
+                    <input class="form-control" id="edad" name="edad" type="text" inputmode="numeric" placeholder="18" required>
+                </div>
+                <div class="col-12">
+                    <button class="btn btn-primary" type="submit">Validar ficha</button>
+                </div>
+            </form>
+            <p id="resultado" role="status"></p>
+        </section>
+    </main>
+    <script src="../js/fichaEstudiante.js" defer></script>
+</body>
+</html>
